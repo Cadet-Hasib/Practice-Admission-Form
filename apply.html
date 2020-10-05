@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <a href="index.html">Admission Form</a>
+                </div>
+                <div class="hamburger">
+                    
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="apply.html">Apply Now</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="main-apply">
+        <h1 style="font-weight: 10; margin: 20px; text-align: center;">Apply Now</h1>
+        <hr>
+        <form style="margin: 20px;" action="POST" data-netlify="true">
+            First Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="FirstName" style="width: 350px;"><br><br>
+            Last Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="LastName" style="width: 350px;"><br><br>
+            Full Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="FullName" style="width: 350px;"><br><br>
+            Father's Name:  <input type="text" name="FathersName" style="width: 350px;"><br><br>
+            Mother's Name: <input type="text" name="MothersName" style="width: 345px;"><br><br>
+            Father's Occupation: <input type="text" name="FathersOccupation" style="width: 300px;"><br><br>
+            Mother's Occupation: <input type="text" name="MothersOccupation" style="width: 300px;"><br><br>
+            Total Marks: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="TotalMarks" style="width: 300px;"><br><br>
+            <b>Total GPA: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+            <select name="GPA">
+                <option>--Select GPA--</option>
+                <option>GPA 0</option>
+                <option>Gpa 1</option>
+                <option>GPA 2</option>
+                <option>GPA 3</option>
+                <option>GPA 4</option>
+                <option>GPA 5</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <b>Gender: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+            <input type="radio" name="gender">&nbsp;&nbsp;Male&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender">&nbsp;&nbsp;Female&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender">&nbsp;&nbsp;Other&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+            <br>
+            <br>
+            Mobile No: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="mobileno.">
+            <br>
+            <br>
+            <b>Skills (Describe): </b><br>
+            <textarea style="width: 600px; resize: none;" rows="7"></textarea><br><br>
+            Upload your Photo: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file" name="file" placeholder="Choose File"><br><br>
+            Upload your Certificate: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file" name="file" placeholder="Choose File"><br><br>
+            <br><b>Email:</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" name="email">
+            <br>
+            <br>
+            <b>Password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b> <input type="password" name="password">
+            <br>
+            <br>
+            <p class="password-note">Note: Please Note that the password is unchangable so please type the password correctly.</p>
+            <br>
+            <br>
+            <div class="captcha">
+                <div data-netlify-recaptcha="true">
+                    
+                </div>
+            </div>
+            <input onclick="window.location.href='submit-complete.html'" type="submit" name="submit" class="submit-btn">
+        </form>
+    </section>
+</body>
+</html>
