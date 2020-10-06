@@ -34,16 +34,16 @@
         <h1 style="font-weight: 10; margin: 20px; text-align: center;">Apply Now</h1>
         <hr>
         <form style="margin: 20px;" data-netlify="true">
-            First Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="FirstName" style="width: 350px;" placeholder="First Name"><br><br>
-            Last Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="LastName" style="width: 350px;" placeholder="Last Name"><br><br>
-            Full Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="FullName" style="width: 350px;" placeholder="Full Name"><br><br>
-            Father's Name:  <input type="text" name="FathersName" style="width: 350px;" placeholder="Father's Name"><br><br>
-            Mother's Name: <input type="text" name="MothersName" style="width: 345px;" placeholder="Mother's Name"><br><br>
-            Father's Occupation: <input type="text" name="FathersOccupation" style="width: 300px;" placeholder="Father's Occupation"><br><br>
-            Mother's Occupation: <input type="text" name="MothersOccupation" style="width: 300px;" placeholder="Mother's Occupation"><br><br>
-            Total Marks: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="TotalMarks" style="width: 300px;" placeholder="Total GPA"><br><br>
+            First Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="FirstName" style="width: 350px;" placeholder="First Name" required><br><br>
+            Last Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="LastName" style="width: 350px;" placeholder="Last Name" required><br><br>
+            Full Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="FullName" style="width: 350px;" placeholder="Full Name" required><br><br>
+            Father's Name:  <input type="text" name="FathersName" style="width: 350px;" placeholder="Father's Name" required><br><br>
+            Mother's Name: <input type="text" name="MothersName" style="width: 345px;" placeholder="Mother's Name" required><br><br>
+            Father's Occupation: <input type="text" name="FathersOccupation" style="width: 300px;" placeholder="Father's Occupation" required><br><br>
+            Mother's Occupation: <input type="text" name="MothersOccupation" style="width: 300px;" placeholder="Mother's Occupation" required><br><br>
+            Total Marks: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="TotalMarks" style="width: 300px;" placeholder="Total GPA" required><br><br>
             <b>Total GPA: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
-            <select name="GPA">
+            <select name="GPA" required>
                 <option>--Select GPA--</option>
                 <option>GPA 0</option>
                 <option>Gpa 1</option>
@@ -62,24 +62,24 @@
             <br>
             <br>
             <br>
-            Mobile No: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="mobileno." placeholder="Mobile Number">
+            Mobile No: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="mobileno." placeholder="Mobile Number" required>
             <br>
             <br>
             <b>Skills (Describe): </b><br>
-            <textarea style="width: 600px; resize: none;" rows="7" placeholder="Describe your Skills"></textarea><br><br>
-            Upload your Photo: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file" name="file" placeholder="Choose File"><br><br>
-            Upload your Certificate: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file" name="file" placeholder="Choose File"><br><br>
-            <br><b>Email:</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" name="email" placeholder="Enter your Email">
+            <textarea style="width: 600px; resize: none;" rows="7" placeholder="Describe your Skills" required></textarea><br><br>
+            Upload your Photo: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file" name="file" placeholder="Choose File" required><br><br>
+            Upload your Certificate: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file" name="file" placeholder="Choose File" required><br><br>
+            <br><b>Email:</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" name="email" placeholder="Enter your Email" required>
             <br>
             <br>
-            <b>Password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b> <input type="password" name="password" placeholder="Enter your Password">
+            <b>Password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b> <input type="password" name="password" placeholder="Enter your Password" required>
             <br>
             <br>
             <p class="password-note">Note: Please Note that the password is unchangable so please type the password correctly.</p>
             <br>
             <br>
             <div class="captcha">
-                <div data-netlify-recaptcha="true">
+                <div data-netlify-recaptcha="true" required>
                     
                 </div>
             </div>
